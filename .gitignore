@@ -1,0 +1,65 @@
+# ==========================
+# ARCHIVOS DEL PROYECTO
+# ==========================
+
+node_modules/
+temp/
+uploads/
+dist/
+build/
+
+# ==========================
+# ARCHIVOS DE CREDENCIALES
+# ==========================
+
+viviendas2025-credentials.json
+*.credentials.json
+credentials.json
+
+# Evitar que cualquier archivo JSON sensible se suba accidentalmente
+secret*.json
+key*.json
+*.key.json
+
+# ==========================
+# VARIABLES DE ENTORNO
+# ==========================
+
+.env
+.env.local
+.env.development
+.env.production
+
+# ==========================
+# LOGS
+# ==========================
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+
+# ==========================
+# SISTEMAS OPERATIVOS
+# ==========================
+
+.DS_Store
+Thumbs.db
+
+# ==========================
+# GIT / EDITORES
+# ==========================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================
+# ARCHIVOS TEMPORALES
+# ==========================
+
+*.tmp
+*.cache
