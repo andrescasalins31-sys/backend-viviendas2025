@@ -7,7 +7,14 @@ import fs from "fs";
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: [
+    "https://mejor-viviendas.vercel.app",  // tu frontend en vercel
+    "http://localhost:5173"                // para tus pruebas locales
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 
 const GOOGLE_CREDENTIALS = process.env.GOOGLE_CREDENTIALS;
 
